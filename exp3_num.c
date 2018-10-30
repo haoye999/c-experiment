@@ -8,13 +8,14 @@ int get_digits(int number)
     /*
     get digits of number
     */
+    int number_s = number;
     int digits = 1;
     while (number / 10 != 0)
     {
         digits++;
         number /= 10;
     }
-    printf("%d的位数：%d\n", number, digits);
+    printf("%d的位数：%d\n", number_s, digits);
     return digits;
 }
 
