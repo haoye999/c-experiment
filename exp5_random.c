@@ -61,7 +61,7 @@ void show_max(int a[rMAX][cMAX])
 
 int main(void)
 {
-    system("clear");
+    // system("clear");
     srand((unsigned int)time(NULL));
     get_random(a);
     printf("Random array:\n");
