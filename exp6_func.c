@@ -3,6 +3,7 @@
 int inNumber()
 {
     int out = 0;
+    printf("Please input a positive number:\n");
     scanf("%d", &out);
     while (out <= 0)
     {
