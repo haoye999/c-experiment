@@ -17,9 +17,26 @@ struct Student
 struct Student student[student_max];
 // 学生实际总数
 int STUDENT_SUM;
+// 成绩比重
+int progress_rate;
+int final_rate;
 
 // 函数声明
 void input();
 void sort();
 void display();
 void search();
+void compute_overall();
+void do_sort();
+void display_by_pro();
+void display_by_final();
+void display_by_overall();
+void change_rate();
+void show_all_info();
+void Delete();
+void delete_stu(int);
+void save();
+void menu();
+void input_file();
+void input_hand();
+int search_by_id(int);

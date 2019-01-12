@@ -2,24 +2,17 @@
 
 int main()
 {
+	// 初始化各参数值
 	STUDENT_SUM = 0;
+	progress_rate = 20;
+	final_rate = 80;
+
 	char i;
 	for (;;)
-		// 循环执行功能菜单
+	// 循环执行功能菜单
 	{
 		system("cls");
-		printf("\n");
-		printf("\t\t\t* * * * * * * * * * * * * * * * *\n");
-		printf("\t\t\t*              Menu             *\n");
-		printf("\t\t\t*         * a. Input *          *\n");
-		printf("\t\t\t*         * b. Display *        *\n");
-		printf("\t\t\t*         * c. Sort *           *\n");
-		printf("\t\t\t*         * d. Find *           *\n");
-		printf("\t\t\t*         * e. Modify *         *\n");
-		printf("\t\t\t*         * f. Add *            *\n");
-		printf("\t\t\t*         * q. Exit *           *\n");
-		printf("\t\t\t* * * * * * * * * * * * * * * * *\n");
-		printf("\t\t\t   Please select a to q :");
+		menu();
 
 		i = getchar();
 		printf("\n");
@@ -33,34 +26,27 @@ int main()
 				break;
 			case 'b':
 				display();
-				while (getchar() != '\n');
-				getchar();
 				break;
 			case 'c':
 				sort();
-				printf("\n\n\n\n* * 按回车键退出 * *\n");
-				while (getchar() != '\n');
-				getchar();
 				break;
 			case 'd':
 				search();
-				printf("\n\n\n\n* * 按回车键退出 * *\n");
-				while (getchar() != '\n');
-				getchar();
 				break;
 			case 'e':
-				// 调用修改函数;
-				printf("\n\n\n\n* * 按回车键退出 * *\n");
-				while (getchar() != '\n');
-				getchar();
+				change_rate();
 				break;
 			case 'f':
-				// 调用添加函数;
-				printf("\n\n\n\n* * 按回车键退出 * *\n");
-				while (getchar() != '\n');
-				getchar();
+				Delete();
+				break;
+			case 'g':
+				save();
 				break;
 			}
+		printf("\n\n\n\n* * 按回车键退出 * *\n");
+		while (getchar() != '\n')
+			;
+		getchar();
 	}
 	return 0;
 }
