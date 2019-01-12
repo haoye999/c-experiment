@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <unistd.h> 
-// å­¦ç”Ÿæœ€å¤šä¸ªæ•°
+#include <string.h>
+// Ñ§Éú×î¶à¸öÊı
 #define student_max 100
 
-// å®šä¹‰å­¦ç”ŸåŸºæœ¬ç»“æ„ä½“
+// ¶¨ÒåÑ§Éú»ù±¾½á¹¹Ìå
 struct Student
 {
 	int id;
@@ -15,10 +15,11 @@ struct Student
 };
 
 struct Student student[student_max];
-// å­¦ç”Ÿå®é™…æ€»æ•°
-int student_sum;
+// Ñ§ÉúÊµ¼Ê×ÜÊı
+int STUDENT_SUM;
 
-// å‡½æ•°å£°æ˜
+// º¯ÊıÉùÃ÷
 void input();
 void sort();
 void display();
+void search();

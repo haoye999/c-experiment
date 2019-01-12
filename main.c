@@ -2,12 +2,12 @@
 
 int main()
 {
-	student_sum = 0;
+	STUDENT_SUM = 0;
 	char i;
 	for (;;)
-		// 寰幆鎵ц鍔熻兘鑿滃崟
+		// 循环执行功能菜单
 	{
-		system("clear");
+		system("cls");
 		printf("\n");
 		printf("\t\t\t* * * * * * * * * * * * * * * * *\n");
 		printf("\t\t\t*              Menu             *\n");
@@ -38,17 +38,27 @@ int main()
 				break;
 			case 'c':
 				sort();
+				printf("\n\n\n\n* * 按回车键退出 * *\n");
 				while (getchar() != '\n');
 				getchar();
 				break;
 			case 'd':
-				// 璋冪敤鏌ユ壘鍑芥暟;
+				search();
+				printf("\n\n\n\n* * 按回车键退出 * *\n");
+				while (getchar() != '\n');
+				getchar();
 				break;
 			case 'e':
-				// 璋冪敤淇敼鍑芥暟;
+				// 调用修改函数;
+				printf("\n\n\n\n* * 按回车键退出 * *\n");
+				while (getchar() != '\n');
+				getchar();
 				break;
 			case 'f':
-				// 璋冪敤娣诲姞鍑芥暟;
+				// 调用添加函数;
+				printf("\n\n\n\n* * 按回车键退出 * *\n");
+				while (getchar() != '\n');
+				getchar();
 				break;
 			}
 	}
