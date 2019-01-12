@@ -327,7 +327,7 @@ void change_rate()
 	system("cls");
 	printf("\t\t\t*            * Change rate *          *\n\n");
 	printf("\t\t\t* * * * * * * * * * * * * * * * * * * *\n");
-	printf("\t\t\t请输入平时成绩与期末成绩之比(例如：\"30,40\"): ");
+	printf("\t\t\t请输入平时成绩与期末成绩之比(例如：\"30,70\"): ");
 	scanf("%d,%d", &progress_rate, &final_rate);
 	if (progress_rate + final_rate == 100)
 	{
