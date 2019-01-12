@@ -25,7 +25,7 @@ void input()
 			input_hand();
 			break;
 		default:
-			printf("\t\t\t输入有误，请重新选择输入方式（y）：");
+			printf("\t\t\t输入有误，请重新选择输入方式（y）/退出（q）：");
 			while (getchar() != '\n')
 				;
 			char ii = getchar();

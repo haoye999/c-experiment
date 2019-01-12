@@ -5,4 +5,4 @@
 201919 Testinput 80 70
 2019004 xiaolu 80 40
 2019021 bendan 50 20
-2019005 butengke 50 7
+2019005 butingke 50 7
